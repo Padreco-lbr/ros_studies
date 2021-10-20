@@ -1,4 +1,4 @@
 <launch>
-    <node pkg="odom_subscriber_pkg" type="odom_subscriber" name="odom_subscriber" output="screen">
+    <node pkg="topic_subscriber_pkg" type="odom_subscriber" name="odom_subscriber" output="screen">
     </node>
 </launch>
