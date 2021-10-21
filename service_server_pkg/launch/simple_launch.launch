@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="simple_service_server" pkg="service_server_pkg" type="simple_service_server" output="screen"/>
+</launch>
