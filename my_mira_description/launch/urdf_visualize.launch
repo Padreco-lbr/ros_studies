@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="model" default=""/>
+
+    <param name="robot_description" command="cat $(arg model)"/>
+
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher">
+        <param name="use_gui" value="TRUE"/>
+    </node>
+    
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
+
+    <!-- <node name="rviz" pkg="rviz" type="rviz" output="screen" args="-d $(fund my_mira_description)/rviz_config/urdf.rviz"/> -->
+    <node name="rviz" pkg="rviz" type="rviz" args=""/>    
+
+</launch>
